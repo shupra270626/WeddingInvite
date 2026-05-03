@@ -1,0 +1,14 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="640" rx="320" fill="#EAD8CB"/>
+  <rect width="640" height="640" rx="320" fill="url(#paint0_radial_1_5)"/>
+  <circle cx="320" cy="250" r="110" fill="#DDB298"/>
+  <path d="M136 523C136 413.096 225.096 324 335 324H343C452.904 324 542 413.096 542 523V641H136V523Z" fill="#8E5A51"/>
+  <path d="M176 216C176 135.366 241.366 70 322 70V70C402.634 70 468 135.366 468 216V248H176V216Z" fill="#5A352F"/>
+  <text x="320" y="586" fill="#6E3E35" font-family="Georgia, serif" font-size="64" text-anchor="middle">Shubham</text>
+  <defs>
+    <radialGradient id="paint0_radial_1_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 170) rotate(90) scale(470)">
+      <stop stop-color="#FFF9F4"/>
+      <stop offset="1" stop-color="#EAD8CB"/>
+    </radialGradient>
+  </defs>
+</svg>
