@@ -126,14 +126,14 @@
     }, 750);
   }
 
-  if (sealBtn) {
-    sealBtn.addEventListener("click", function () {
-      if (typeof window.startWeddingMusic === "function") {
-        window.startWeddingMusic();
-      }
-      rise();
-    });
+  function openInvitation() {
+    if (typeof window.startWeddingMusic === "function") {
+      window.startWeddingMusic();
+    }
+    rise();
   }
+
+  intro.addEventListener("click", openInvitation);
 })();
 
 (function initPetals() {
