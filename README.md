@@ -1,6 +1,6 @@
 # Wedding Invite
 
-This is a static wedding invitation site for Pranjali and Shubham.
+This is a static wedding invitation site for Shubham and Pranjali.
 
 ## Deploy
 
