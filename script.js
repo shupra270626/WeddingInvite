@@ -34,7 +34,6 @@
   var audio = document.getElementById("bgMusic");
   if (!audio) return;
 
-  audio.autoplay = true;
   audio.loop = true;
   audio.preload = "auto";
   audio.volume = 1;
@@ -54,6 +53,8 @@
     }
   }
 
+  window.startWeddingMusic = unlockAndPlay;
+
   document.addEventListener("click", unlockAndPlay, { once: true });
   document.addEventListener("touchstart", unlockAndPlay, { once: true });
   document.addEventListener("keydown", unlockAndPlay, { once: true });
@@ -69,11 +70,6 @@
     tryPlay();
   });
 
-  if (document.readyState === "complete") {
-    tryPlay();
-  } else {
-    window.addEventListener("load", tryPlay, { once: true });
-  }
 })();
 
 (function initCurtain() {
@@ -130,11 +126,11 @@
     }, 750);
   }
 
-  var autoRise = setTimeout(rise, 1500);
-
   if (sealBtn) {
     sealBtn.addEventListener("click", function () {
-      clearTimeout(autoRise);
+      if (typeof window.startWeddingMusic === "function") {
+        window.startWeddingMusic();
+      }
       rise();
     });
   }
